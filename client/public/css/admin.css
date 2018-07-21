@@ -1,0 +1,27 @@
+.adminUserListContainer {
+	margin-top: 1.5em;
+}
+
+.adminUserListTitle {
+	display: grid;
+	padding: 0.4em;
+	grid-template-columns: 30vw 30vw 8vw 8vw auto;
+	font-weight: bold;
+	border-bottom: 2px solid black;
+	font-size: 1em;
+}
+
+.adminUserListItem {
+	display: grid;
+	grid-template-columns: 30vw 30vw 8vw 8vw auto;
+	padding: 0.4em;
+}
+
+.adminUserListItem div {
+	overflow: hidden;
+}
+.adminListButton {
+	margin: auto auto auto 0;
+	padding: 0.2em 0.6em;
+	font-size: 0.8em;
+}

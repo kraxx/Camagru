@@ -1,0 +1,39 @@
+.navbar {
+	width: 100%;
+	top: 0;
+	position: fixed;
+	background-color: #333;
+	color: white;
+	box-shadow: 0.25em 0.25em 0.8em rgba(0,0,0,0.6);
+	z-index: 4;
+}
+
+.navbarUl {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbarLi {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0.8em 1.5em;
+}
+
+.navbarLiLink {
+	color: white;
+	text-decoration: none;
+}
+
+.navbarLi:hover {
+	background-color: #111;
+}
+
+.statusBar {
+	display: block;
+	float: right;
+	padding: 0.8em 1.5em;
+	font-size: 1em;
+}

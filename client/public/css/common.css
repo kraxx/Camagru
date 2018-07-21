@@ -1,0 +1,13 @@
+.camagruButton {	
+  background-color: #333;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 4px black;
+  color: white;
+  margin: 1em 1.5em 0 0;
+  padding: 0.6em 1.5em;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
+}

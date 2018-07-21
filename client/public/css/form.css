@@ -1,0 +1,82 @@
+.camagruFormContainer {
+	display: block;
+}
+.camagruForm {
+	display: inline-block;
+}
+
+.camagruFormTitle {
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0.5em 0 0 0;
+}
+
+.camagruForm hr {
+	margin-top: -1em;
+	margin-right: -15%;
+	border: 1px solid black;
+}
+
+.camagruFormField {
+	display: grid;
+	grid-template-columns: 8em 8em;
+	font-size: 1.3em;
+}
+
+.camagruFormField label, input, select {
+	margin: 0.2em 0;
+}
+
+.camagruFormField input, select {
+  box-shadow: 1.5px 1.5px 5px black;
+  border-radius: 0;
+  padding: 0.5em;
+}
+
+.camagruFormField input[type=checkbox] {
+  margin: auto auto auto 0;
+  height: 1.2em;
+  width: 1.2em;
+  background-color: #eee;
+  border: 1px solid black;
+  box-shadow: 1.5px 1.5px 5px black;
+}
+
+.camagruFormCheckmarkContainer {
+}
+
+.camagruFormCheckmarkContainer:hover {
+	background-color: #ddd;
+}
+
+.camagruFormCheckmarkContainer input:checked ~ .camagruFormCheckmarkIcon {
+	background-color: #2196F3;
+}
+
+.camagruFormCheckmarkContainer input:checked ~ .camagruFormCheckmarkIcon:after {
+  display: block;
+}
+
+.camagruFormCheckmarkContainer .camagruFormCheckmarkIcon {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.camagruFormButton {
+  background-color: #333;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 4px black;
+  color: white;
+  margin: 1em 1.5em 0 0;
+  padding: 0.6em 1.5em;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
+}

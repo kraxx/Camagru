@@ -1,0 +1,7 @@
+.loginForgotPassword {
+  margin: 1em 0 0 0;
+  text-decoration: underline;
+}
+.loginForgotPassword a {
+  cursor: pointer;
+}

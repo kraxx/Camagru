@@ -1,0 +1,34 @@
+.camContainer {
+	position: absolute;
+	margin-top: 1em;
+}
+
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	outline: 0.25em solid;
+	z-index: 2;
+}
+
+#backup {
+	position: absolute;
+	display: none;
+}
+
+.camFormContainer {
+	margin: 1em 0;
+}
+
+.decalContainer {
+	position: relative;
+	box-shadow: 0.5em 0.5em 1em black;
+}
+
+.decalImageContainer {
+	display: inline-block;
+}
+
+.decalContainer img {
+	z-index: 3;
+}

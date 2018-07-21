@@ -1,0 +1,44 @@
+{
+  "name": "camagru-client",
+  "version": "1.0.0",
+  "description": "Camagru Views",
+  "main": "src/index.js",
+  "repository": "https://github.com/kraxx/42_Camagru",
+  "author": "kraxx",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development --devtool inline-source-map --hot --open",
+    "build": "webpack --mode=production",
+    "bundle": "webpack --config webpack.config.js",
+    "prestart": "yarn bundle"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.10.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "redux-logger": "^3.0.6",
+    "style-loader": "^0.21.0",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

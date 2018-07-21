@@ -1,0 +1,88 @@
+.thumbnailContainer {
+	display: inline-block;
+  width: 300px;
+  height: 280px;
+	margin: 0.7em 0.5em;
+	background-color: #eee;
+	box-shadow: 3px 3px 6px black;
+	overflow: hidden;
+}
+
+.camagruThumb {
+	cursor: pointer;
+  width: 300px;
+  height: 220px;
+}
+
+.thumbnailContainer p {
+	margin: 1em 1.2em;
+}
+
+.deetsContainer {
+	display: grid;
+	grid-template-columns: 640px auto;
+}
+
+.deetsPhotoContainer {
+	background-color: black;
+}
+
+.deetsPhoto {
+	margin: auto;
+	display: block;
+	position: relative;
+	top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.deetsInfoContainer {
+	padding: 0.5em;
+	height: 90%;
+	box-sizing: border-box;
+}
+
+.deetsTitle {
+	display: inline-block;
+	font-size: 1.15em;
+	font-weight: bold;
+}
+
+.deetsTitle hr {
+	margin-top: -1em;
+	margin-right: -15%;
+	border: 1px solid black;
+}
+
+.commentList {
+	height: 50vh;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+}
+
+.commentEntry {
+	padding: 0;
+	margin: 0;
+}
+
+.commentUsername {
+	font-size: 1.05em;
+	font-weight: bold;
+}
+
+.commentBoxContainer hr {
+	margin-right: -5%;
+}
+.commentBox {
+	margin-top: 1em;
+	width: 100%;
+	font-size: 1em;
+	resize: none;
+}
+
+.commentBoxContainer input {
+	margin: 0.2em 0;
+}
+.postDeleteButton {
+	margin-left: 1em;
+}

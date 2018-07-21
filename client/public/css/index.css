@@ -1,0 +1,10 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(
+    rgba(255,255,255,.45),
+    rgba(255,255,255,.45)
+    ),
+    url('../wallpaper/wallpaper.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+;}
