@@ -1,0 +1,29 @@
+{
+  "name": "camagru-server",
+  "version": "1.0.0",
+  "description": "Camagru API",
+  "main": "server.js",
+  "author": "kraxx",
+  "private": true,
+  "repository": "https://github.com/kraxx/42_Camagru",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./server.js",
+    "dev": "sh db_local/camagru_gcloud_sql.sh; nodemon ./server.js"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.7.0",
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "nodemailer": "^4.6.7",
+    "pg": "^7.4.3",
+    "require": "^2.4.20",
+    "sequelize": "^4.37.10"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "nodemon": "^1.17.5"
+  }
+}

@@ -1,0 +1,10 @@
+Musings:
+UUIDv4 Good enough for email verification?
+Session management? How do that auth thing. Should use CSRF tokens.
+
+Todo:
+gotta truncate stuff
+paginate (complex state stuff)
+implement likes and faves
+more css so it's nice
+--> mobile responsive too
