@@ -1,5 +1,5 @@
 import { alertActions } from './alert.action.js';
-import { history } from '../helpers/history.js';
+import { history } from '../helpers';
 import postService from '../services/post.service.js';
 
 const postImage = (postData) => {

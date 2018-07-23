@@ -34,7 +34,7 @@ class VerifyUserPage extends Component {
 
   render() {
     return(
-      <Title>Verfying User...</Title>
+      <Title>Verifying User...</Title>
     )
   }
 }

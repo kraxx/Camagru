@@ -4,13 +4,11 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunkMiddleWare from 'redux-thunk';
 // import { createLogger } from 'redux-logger';
-// import { CookiesProvider } from 'react-cookie';
 
 import rootReducer from './reducers';
 import { App } from './components';
 import '../public/css/index.css';
 
-// import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(
   rootReducer,
@@ -19,6 +17,8 @@ const store = createStore(
     // createLogger() //redux debugger
   )
 );
+
+console.log("this is v0.2");
 
 ReactDOM.render((
   <Provider store={store}>

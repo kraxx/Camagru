@@ -1,11 +1,12 @@
-/*@keyframes alertAnimation {
-	from {top: -1.5em;}
+@keyframes alertAnimation {
+	from {top: -2em;}
 	to {top: 3.2em;}
-}*/
+}
 
 .alertBox {
 	position: fixed;
-	top: 3.2em;
+	/*top: 3.2em;*/
+	top: -2em;
 	left: 50%;
 	padding: 0 0.6em;
 	text-align: center;
@@ -15,10 +16,11 @@
 	border-radius: 0.4em;
 	box-shadow: 0.15em 0.15em 1em rgba(0,0,0,0.6);
 	z-index: 3;
-/*	animation-name: alertAnimation;
-	animation-duration: 3s;
+	animation-name: alertAnimation;
+	/*animation-delay: 6s;*/
+	animation-duration: 10s;
 	animation-direction: alternate;
-	animation-iteration-count: 2;*/
+	animation-iteration-count: 2;
 }
 
 .alertSuccess {

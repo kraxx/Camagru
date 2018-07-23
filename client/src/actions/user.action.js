@@ -1,6 +1,6 @@
 import { alertActions } from './alert.action.js';
+import { history } from '../helpers';
 import userService from '../services/user.service.js';
-import history from '../helpers/history.js';
 
 const login = (username, password) => {
 
@@ -30,7 +30,7 @@ const login = (username, password) => {
       if (user) {
         dispatch(success(user));
         history.push('/'); // redirect to HomePage after success
-        dispatch(alertActions.success(`Welcome ${user.username}!`));        
+        dispatch(alertActions.success(`Welcome ${user.username}!`));
       } else {
         dispatch(failure('No actual user was returned'));
         dispatch(alertActions.error('No actual user was returned'));
