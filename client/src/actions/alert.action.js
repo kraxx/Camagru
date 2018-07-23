@@ -1,15 +1,27 @@
+const clearAfterDelay = (dispatch) => {
+  return setTimeout(() => {
+    dispatch({ type: 'ALERT_CLEAR' });
+  }, 5000);
+}
+
 const success = (message) => {
-  return {
-    type: 'ALERT_SUCCESS',
-    message
-  };
+  return (dispatch) => {
+    dispatch({
+      type: 'ALERT_SUCCESS',
+      message
+    });
+    return clearAfterDelay(dispatch);
+  }
 }
 
 const error = (message) => {
-  return {
-    type: 'ALERT_ERROR',
-    message
-  };
+  return (dispatch) => {
+    dispatch({
+      type: 'ALERT_ERROR',
+      message
+    });
+    return clearAfterDelay(dispatch);
+  }
 }
 
 const clear = () => {

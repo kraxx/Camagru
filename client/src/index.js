@@ -18,8 +18,6 @@ const store = createStore(
   )
 );
 
-console.log("this is v0.2");
-
 ReactDOM.render((
   <Provider store={store}>
       <App/>

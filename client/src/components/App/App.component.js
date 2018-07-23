@@ -24,7 +24,7 @@ class App extends Component {
       <Router history={history}>
         <div>
           <Header />
-          <AlertBar alert={alert} />
+          { alert.message && <AlertBar alert={alert} /> }
           <Main />
         </div>
       </Router>
