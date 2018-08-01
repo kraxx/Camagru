@@ -27,8 +27,17 @@
 	text-decoration: none;
 }
 
+.navbarLiLink img {
+	height: 1em;
+	align-content: center;
+	margin-left: 2em auto;
+	padding: 1em auto;
+	/*background-color: green;*/
+	display: inline-block;
+}
+
 .navbarLi:hover {
-	background-color: #111;
+	background-color: #222;
 }
 
 .statusBar {
@@ -36,4 +45,33 @@
 	float: right;
 	padding: 0.8em 1.5em;
 	font-size: 1em;
+}
+
+.active {
+	background-color: #111 !important;
+}
+
+.expander {
+	display: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarLi, .statusBar {
+  	display: none;
+  }
+  .expander {
+  	display: inline-block;
+  	float: right;
+  	text-align: right;
+  }
+  .responsive {
+  	display: block;
+  	float: none;
+  	text-align: left;
+  	width: 100%;
+  }
+  .active {
+  	display: block;
+  }
 }
