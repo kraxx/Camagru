@@ -11,3 +11,9 @@
   font-size: 1em;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .camagruButton {
+    font-size: 0.8em;
+  }
+}

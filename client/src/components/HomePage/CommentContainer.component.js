@@ -102,7 +102,7 @@ class CommentContainer extends Component {
   render() {
 	  const { authentication, post, allowMod, dispatch } = this.props;
 	  return (
-	  	<div>
+	  	<div class='commentContainer'>
 	  		{this.state.comments.length > 0 ? (
           <div className='commentList'>
           {this.state.comments.map(comment =>

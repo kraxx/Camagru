@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "webpack --mode development",
-    "dev": "webpack-dev-server --mode development --devtool inline-source-map --hot --open",
+    "dev": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "build": "webpack --mode=production",
     "bundle": "webpack --config webpack.config.js",
     "prestart": "yarn bundle"

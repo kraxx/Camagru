@@ -32,7 +32,6 @@
 	align-content: center;
 	margin-left: 2em auto;
 	padding: 1em auto;
-	/*background-color: green;*/
 	display: inline-block;
 }
 
@@ -56,7 +55,7 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
   .navbarLi, .statusBar {
   	display: none;
   }
