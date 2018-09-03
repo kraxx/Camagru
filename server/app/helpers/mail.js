@@ -32,8 +32,7 @@ kraxx`
 
 const sendMail = (username, email, message) => {
 
-  axios.post(
-  `${mailService}/camagru_mail`, {
+  axios.post(mailService, {
     name: username,
     email: email,
     message: message
