@@ -1,10 +1,11 @@
-const nodemailer = require('nodemailer');
-const env = require('../config/env.js')
+const axios = require('axios');
+const env = require('../config/env.js');
+
 const hostDomain = env.HOST_DOMAIN;
+const mailService = env.mail.MY_MAIL_SERVICE;
 
 const verificationMessage = (username, token) => (
-`
-Hello ${username}!
+`Hello ${username}!
 
 Thanks for registering with Camagru!
 
@@ -14,13 +15,11 @@ https://${hostDomain}/verify?q=${token}
 
 Cheers!
 
-King Kafali a.k.a. Kafali King a.k.a. Chief Kafali
-`
+kraxx`
 )
 
 const resetPasswordMessage = (username, token) => (
-`
-Hello ${username}!
+`Hello ${username}!
 
 Please use the following link to reset your password:
 
@@ -28,50 +27,26 @@ https://${hostDomain}/reset_password?q=${token}
 
 Cheers!
 
-King Kafali a.k.a. Kafali King a.k.a. Chief Kafali
-`
+kraxx`
 )
 
-const transporter = nodemailer.createTransport({
-  service: env.mail.SERVICE,
-  auth: {
-    user: env.mail.USER,
-    pass: env.mail.PASS
-  }
-});
+const sendMail = (username, email, message) => {
 
-exports.sendVerificationMail = (username, email, token) => {
-
-  const mailOptions = {
-    from: 'Camagru App',
-    to: email,
-    subject: 'Camagru - User verification',
-    text: verificationMessage(username, token)
-  };
-
-  transporter.sendMail(mailOptions, (err, info) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(`Verification e-mail sent: ${info.response}`);
-    }
+  axios.post(
+  `${mailService}/camagru_mail`, {
+    name: username,
+    email: email,
+    message: message
+  })
+  .catch(err => {
+    console.log(`Error sending verification mail: ${err}`);
   });
 }
 
+exports.sendVerificationMail = (username, email, token) => {
+  sendMail(username, email, verificationMessage(username, token));
+}
+
 exports.sendPasswordResetMail = (username, email, token) => {
-
-  const mailOptions = {
-    from: 'Camagru App',
-    to: email,
-    subject: 'Camagru - Password reset',
-    text: resetPasswordMessage(username, token)
-  };
-
-  transporter.sendMail(mailOptions, (err, info) => {
-    if (err) {
-      console.log(err)
-    } else {
-      console.log(`Password reset e-mail sent: ${info.response}`);
-    }
-  });
+  sendMail(username, email, resetPasswordMessage(username, token));
 }

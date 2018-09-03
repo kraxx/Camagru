@@ -16,7 +16,7 @@ exports.generateUuidv4 = () => {
 }
 
 exports.hashPassword = (user) => {
-  return bcrypt.hash(user.password, env.jwt.SALT_WORK_FACTOR)
+  return bcrypt.hash(user.password, parseInt(env.jwt.SALT_WORK_FACTOR, 10))
     .then(hash => {
       user.password = hash;
     })

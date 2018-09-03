@@ -71,23 +71,9 @@ module.exports = (sequelize, Sequelize) => {
       hooks: {
 
         beforeCreate: (user => {
-          console.log(">>> >>> BEFORE CREATE INVOKED")
           return auth.hashPassword(user);
-        }),
-        // beforeUpdate: (user => {
-        //   console.log(">>> >>> BEFORE UPDATE INVOKED")
-        //   return hashPassword(user);
-        // })
+        })
 
-        beforeBulkDestroy: (( whatever ) => {
-          console.log("BEFORE BULK DESTROY IN USER: ")
-          console.log("w/e", whatever)
-          // console.log("hoks", hooks)
-        }),
-        // afterDestroy: (user => {
-        //   console.log("AFTER DESTROY HOOK FOR USER")
-        //   // console.log(user)
-        // })
       }
     }
   );

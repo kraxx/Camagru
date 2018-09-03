@@ -22,7 +22,8 @@ const env = {
   mail: {
     USER: process.env.MAIL_USER,
     PASS: process.env.MAIL_PASS,
-    SERVICE: process.env.MAIL_SERVICE
+    SERVICE: process.env.MAIL_SERVICE,
+    MY_MAIL_SERVICE: process.env.MY_MAIL_SERVICE
   }
 };
 

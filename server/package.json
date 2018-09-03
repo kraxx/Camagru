@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@google-cloud/storage": "^1.7.0",
-    "bcrypt": "^2.0.1",
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.3.0",
-    "nodemailer": "^4.6.7",
     "pg": "^7.4.3",
     "require": "^2.4.20",
     "sequelize": "^4.37.10"
